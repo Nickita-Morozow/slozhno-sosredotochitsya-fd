@@ -1,4 +1,8 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --cover-image: url("../images/cover-image.png");
+  --background-color: #000028;
+  --signal-color: #FF0070;
+  --highlight-color: #000028;
+  --secondary-color: #ff0070;
+  --main-font: 'IBM Plex mono';
+}
