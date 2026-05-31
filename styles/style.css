@@ -1,24 +1,22 @@
 .page {
-  
- 
-  background-color: var(--background-color);
   color: var(--text-color, #f1b2ce);
   font-family: var(--page-font-family, "IBM Plex mono", monospace);
   font-size: 18px;
   line-height: 23.4px;
+  background-color: var(--background-color);
 }
 
 .header {
   display: grid;
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
-  padding-inline-start: 0;
   align-items: start;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  padding-inline-start: 0;
   background-image: var(--cover-image, url("../images/cover-image.png"));
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  min-block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -62,14 +60,14 @@
 
 .header__title {
   justify-self: end;
-  inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
   margin-block: 55px;
   color: var(--highlight-color, #000028);
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
   background: var(--signal-color, #ff0070);
-  }
+  inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+}
 
 .add-shadow {
   text-shadow: 2px 2px 0 var(--signal-color, #ff0070);
@@ -84,6 +82,8 @@
 
 .rec-icon {
   position: absolute;
+  /*z-index: -1;*/
+  visibility: var(--rec-decor-visibility, visible);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -91,8 +91,6 @@
   color: var(--signal-color);
   inset-inline-end: 20px;
   inset-block-start: 20px;
-  /*z-index: -1;*/
-  visibility: var(--rec-decor-visibility, visible);
 }
 
 .rec-icon::before {
@@ -102,7 +100,7 @@
 }
 
 .rec-icon::after {
-  content: '';
+  content: "";
   display: inline-block;
   border-radius: 50%;
   box-shadow: 0 0 2px 2px var(--signal-clr, #ff0070);
@@ -200,9 +198,9 @@
 }
 
 .footer {
+  display: flex;
   place-items: center;
   min-height: 768px;
-  display: flex;
 }
 .footer .page__title {
   margin: auto;
@@ -234,11 +232,7 @@
   }
 }
 
-
 @media (width >= 768px) {
-	
-  
-  
   .header {
     padding-inline-start: 0;
   }
@@ -293,7 +287,7 @@
   .add-shadow {
     text-shadow: 4px 4px 0 var(--signal-color, #ff0070);
   }
-  
+
   .section-cnctr__articles-list {
     grid-template-columns: repeat(3, 1fr);
   }

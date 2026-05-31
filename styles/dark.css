@@ -1,2 +1,25 @@
 :root.theme-dark {
+  --cover-image: url("../images/cover-image-dark.png");
+  --background-color: #000028;
+  --brand-color: #db00ff;
+  --text-color: #f1b2ce;
+  --signal-color: #FF0070;
+  --highlight-color: #000028;
+  --secondary-color: #ff0070;
+  --secondary-color-o-40: #ff007040;
+  --rec-decor-visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-dark {
+    --cover-image: url("../images/cover-image-dark.png");
+    --background-color: #000028;
+    --brand-color: #db00ff;
+    --text-color: #f1b2ce;
+    --signal-color: #FF0070;
+    --highlight-color: #000028;
+    --secondary-color: #ff0070;
+    --secondary-color-o-40: #ff007040;
+    --rec-decor-visibility: visible;
+  }
 }
