@@ -1,8 +1,12 @@
 :root {
-  --cover-image: url("../images/cover-image.png");
+  --cover-image: url("../images/cover-image-dark.png");
   --background-color: #000028;
-  --signal-color: #FF0070;
+  --brand-color: #db00ff;
+  --text-color: #f1b2ce;
+  --signal-color: #ff0070;
   --highlight-color: #000028;
   --secondary-color: #ff0070;
-  --main-font: 'IBM Plex mono';
+  --secondary-color-pale: #ff007040;
+  --rec-decor-visibility: visible;
+  --page-font-family: "IBM Plex mono";
 }
