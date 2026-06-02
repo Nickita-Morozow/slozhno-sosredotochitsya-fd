@@ -210,7 +210,9 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  border-bottom: 1px solid currentColor;
+  line-height: 1;
 }
 
 .link:focus {
